@@ -1,0 +1,27 @@
+.main__chat
+ .main__header
+  .main__header__left
+   .main__header__group-name
+    group name
+   .main__header__member
+    Member :
+  .main__header__right
+   .main__header__edit
+    Edit
+ .messages
+  .message
+   .message__upper-info
+    .message__upper-info__talker
+     miyazaki
+    .message__upper-info__date
+     2019/11/9/19:14:39
+   .message__text  
+    this is a first massage
+ .form
+  .message-box
+   .input-box
+    %input{type: "text", placeholder: "type a message", class: "input-box__text"}
+    %label{class: "input-box__image"}
+     = fa_icon 'image', class: "box__icon"
+     %input{type: "file", class: "input-box__image__file"}
+   %input{type: "submit", value: "send", class: "submit-btn"}
