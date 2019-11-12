@@ -45,7 +45,7 @@ $black: #434a54;
     background-color: #fafafa;
     .message{
       padding-bottom: 40px;
-      .message__upper-info{
+      &__upper-info{
        display: $fx;
        margin-bottom: 10px;
        &__talker{
@@ -59,7 +59,7 @@ $black: #434a54;
          color: #999999;
        }
      }
-     .message__text{
+     &__text{
        font-size: 14px;
        color: $black;
      }
@@ -106,6 +106,6 @@ $black: #434a54;
         color: white;
         cursor: pointer;
       }
-    }
+   }
   }
 }
