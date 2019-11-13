@@ -4,18 +4,18 @@
       .side-header__box__user-name
         = current_user.name
       .side-header__box__menu
-        =link_to "#", class: "side-header__box__menu__new-group" do
+        =link_to new_group_path, class: "side-header__box__menu__new-group" do
           = fa_icon 'edit', class: "fa-edit"
         =link_to edit_user_path(current_user), class: "side-header__box__menu__edit-user" do
           = fa_icon 'cog', class: "fa-cog"
   .groups
-    .group
-      .group__group-name
-        test
-      .group__latest-message
-        まだメッセージはありません
-    .group
-      .group__group-name
-        test2
-      .group__latest-message
-        まだメッセージはありません
+    - current_user.groups.each do |group|
+      .group
+        = link_to group_messages_path(group) do
+          .group__group-name
+            = group.name
+          .group__latest-message
+            メッセージはまだありません。
+
+
+   
