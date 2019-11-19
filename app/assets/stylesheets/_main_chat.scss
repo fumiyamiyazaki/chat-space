@@ -47,6 +47,7 @@ $black: #434a54;
     height: calc(100vh - 190px);
     padding: 46px 0 0 40px;
     background-color: #fafafa;
+    overflow: scroll;
     .message{
       padding-bottom: 40px;
       &__upper-info{
